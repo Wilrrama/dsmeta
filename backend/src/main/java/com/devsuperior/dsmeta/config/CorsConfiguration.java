@@ -22,7 +22,7 @@ public class CorsConfiguration implements WebMvcConfigurer {
 	
 	public void addCorsMappings3(CorsRegistry registry) {
         registry.addMapping("/**")
-            .allowedOrigins("https://dsmeta-wilson.netlify.app/")
+            .allowedOrigins("https://dsmeta-wilson.netlify.app")
             .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD", "TRACE", "CONNECT");
     }
 	
