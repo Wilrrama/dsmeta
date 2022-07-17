@@ -13,5 +13,18 @@ public class CorsConfiguration implements WebMvcConfigurer {
             .allowedOrigins("http://localhost:3000")
             .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD", "TRACE", "CONNECT");
     }
+	
+	public void addCorsMappings2(CorsRegistry registry) {
+        registry.addMapping("/**")
+            .allowedOrigins("https://dsmeta-wilson.herokuapp.com")
+            .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD", "TRACE", "CONNECT");
+    }
+	
+	public void addCorsMappings3(CorsRegistry registry) {
+        registry.addMapping("/**")
+            .allowedOrigins("https://dsmeta-wilson.netlify.app/")
+            .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD", "TRACE", "CONNECT");
+    }
+	
 }
 
